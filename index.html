@@ -1,2 +1,287 @@
-<h1> Hello world </h1>
-<p> Converting my wordpress site to raw html/css/js </p>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Anthony Portfolio Website</title>
+    <meta name="author" content="Anthony Bogli" />
+    <meta name="description" content="Creating a platform for my Work" />
+    <meta name="keywords"  content="TODO:" />
+    <meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="CSS/texteffects/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/texteffects/curlytext.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/texteffects/style12.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/AnimateText.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/examples.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/flipbox.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/Particlecss.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	
+	
+	
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+	
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<style>
+		.intro, .conteneurFlip {
+			font-family: 'Raleway';font-size: 15px;
+		}
+		
+		.contactText {
+			font-family: 'Quicksand';font-size: 45px;
+		}
+		
+		.contactTextp {
+			font-family: 'Raleway';font-size: 20px;
+		}
+		
+	</style>
+
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/fullpage.js"></script>
+	<script type="text/javascript" src="scripts/particle.js"></script>
+
+    <script type="text/javascript">
+        //using document ready...
+        $(document).ready(function(){
+
+            //initialising fullpage.js in the jQuery way
+            $('#fullpage').fullpage({
+                sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff'],
+                navigation: true,
+                slidesNavigation: true,
+            });
+
+            // calling fullpage.js methods using jQuery
+            $('#moveSectionUp').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionUp();
+            });
+
+            $('#moveSectionDown').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+    </script>
+
+   
+</head>
+<body>
+
+
+
+
+
+<div id="fullpage">
+    <div class="section">
+        <div class="intro">
+			<img src="images/LogoAnthony3.png" width="239" height="154">
+            <h1>Anthony Bogli</h1>
+            <p>Web developer, Game programmer, Enthusiast thank-you for your attention</p>
+           
+        </div>
+    </div>
+	
+<div class="section">
+	<div class="intro"> <h1> <u> Skills </u> </h1> </div>
+		
+		<div class="container">
+		
+			<div class="row">
+			 <div class="col-md-2 ">	 </div>
+			  <div class="col-md-3 ">
+				  <div class='conteneurFlip'>
+				  
+					<div class='rectoFlip'> 
+						<span class='txtRecto'> <i class="fas fa-globe fa-4x" style="font-size:72"></i> <br> <br> HTML/CSS  </span>
+					</div>
+					
+						
+					
+					<div class='versoFlip'><span class='txtVerso'><font color="black">
+					Im proficient at html, being able to make, host and create websites with a high SEO 
+					rating so that find and view by using there 
+					internet browser your content using a internet browser
+					</font></span></div>
+				</div>
+				</div>
+			  
+			  <div class="col-md-3 ">
+				
+				  <div class='conteneurFlip'>
+					<div class='rectoFlip'><span class='txtRecto'>  <i class="fas fa-business-time fa-4x" style="font-size:72"></i> <br> <br> Managment Skills</span></div>
+					<div class='versoFlip'><span class='txtVerso'><font color="black">
+					I am adept at management & maintaining public relations, 
+					so that your work pipeline is more efficient, 
+					and that business is viewed professionally by their clients & future clients
+					</font></span></div>
+				</div>
+				</div>
+			  
+			  <div class="col-md-3 ">
+			
+				  <div class='conteneurFlip'>
+					<div class='rectoFlip'><span class='txtRecto'> <i class="fas fa-tools fa-4x" style="font-size:72"></i> <br> <br> Full Stack Development</span></div>
+					<div class='versoFlip'><span class='txtVerso'><font color="black">
+					Is it a front end problem, is it a back end problem? is it a design problem? No matter who,what, where or what platform the issue may be, 
+					with my skillset i can fascilitate a solution to it because i know all aspects (Disclaimer: im not omnicient)
+					</font></span></div>
+				</div>
+				</div>
+				 <div class="col-md-1 ">	 </div>
+			</div>
+			 <br>
+			 
+			 <div class="row">
+			  <div class="col-md-2 ">	 </div>
+			   <div class="col-md-3 ">	
+				  <div class='conteneurFlip'>
+					<div class='rectoFlip'><span class='txtRecto'><i class="fas fa-desktop fa-4x" style="font-size:72"></i> <br> <br> C++ // C# Programming </span></div>
+					<div class='versoFlip'><span class='txtVerso'><font color="black">
+					I use C# to create rapid prototype applications for local machines, that tends to organise data or is game derieved,
+					C++ for more hardware related tasks like applications that port to an arduino based products, this can be useful for drone dev and other tasks
+					
+					</font></span></div>
+				</div>
+				</div>
+				
+			    <div class="col-md-3 ">  
+				  <div class='conteneurFlip'>
+					<div class='rectoFlip'><span class='txtRecto'><i class="fas fa-gamepad fa-4x" style="font-size:72"></i> <br> <br> Game Development</span></div>
+					<div class='versoFlip'><span class='txtVerso'><font color="black">
+					 I am able to create games using, from opengl , Unreal, Unity, Phaser for web application games and 
+					 Monodevelop which is a 2D framework that can port to Android and IOS applications. 
+					</font></span></div>
+				</div>
+				</div>
+				
+			<div class="col-md-3 ">
+				  <div class='conteneurFlip'>
+					<div class='rectoFlip'><span class='txtRecto'> <i class="fas fa-palette fa-4x" style="font-size:72"></i> <br> <br> Graphic Design</span></div>
+					<div class='versoFlip'><span class='txtVerso'><font color="black">
+					Can create content for websites, brands or social media, 
+					37% of marketers say visual marketing was the most important form of their business and 
+					74% of social media marketers use visual assets in social media
+					</font></span></div>
+				</div>
+				</div>
+				 <div class="col-md-1 ">	 </div>
+			</div>
+	
+	</div>
+</div>
+	
+	
+    <div class="section">
+       
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1">  </div>
+				<div class="col-md-5"> 
+				<div class='contactText'> Keep in Touch! </div>
+				<div class='contactTextp'>
+				Have a question?  perhaps an enquiry?  Well regardless!  Feel free to contact me! 
+				Just fill out your details to the right and il try to get in touch with you as soon as
+				possible!
+				
+				</div>
+				
+
+				</div>
+				<div class="col-md-5">
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfk6K-WFtCYCPL8BjOlShOAfjnjqz1BlY6_SxcD1KEev4XCJw/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+				</div>
+				<div class="col-md-1">  </div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">  </div>
+				
+				
+				 <div class="col-md-8">
+					<div class="content">
+					<svg viewBox="0 0 575 100">
+			
+						<!-- Symbol -->
+						<symbol id="s-text">
+							<text text-anchor="middle" x="50%" y="50%" dy=".35em">
+								SOCIAL MEDIA
+							</text>
+						</symbol>
+
+						<!-- Duplicate symbols -->
+						<use xlink:href="#s-text" class="text"></use>
+						<use xlink:href="#s-text" class="text"></use>
+						<use xlink:href="#s-text" class="text"></use>
+						<use xlink:href="#s-text" class="text"></use>
+						<use xlink:href="#s-text" class="text"></use>
+
+					</svg>
+
+					</div>
+				</div>
+				
+				<div class="col-md-2">  </div>
+		
+			</div>
+			
+			<div class="row">
+				<div class="col-md-2">  </div>
+					<div class="col-md-8">
+						  <div class="intro"> Follow me online, more information will be available soon </div>
+					</div>
+				<div class="col-md-2">  </div>
+			
+			</div>
+			<br>
+			
+				<div class="row">
+				<div class="col-md-2">  </div>
+					<div class="col-md-2">
+						 <a href="https://www.facebook.com/anthony.bogli1" class="fab fa-facebook fa-2x"></a>
+					</div>
+					<div class="col-md-2">
+						 <a href="https://twitter.com/Monarchshield" class="fab fa-twitter fa-2x"></a>
+					</div>
+					<div class="col-md-2">
+						<a href="https://www.linkedin.com/in/anthony-bogli-318bb910a/" class="fab fa-linkedin fa-2x"></a>
+					</div>
+					<div class="col-md-2">
+						 <a href="https://github.com/monarchshield" class="fab fa-github fa-2x"></a>
+					</div>
+				<div class="col-md-2">  </div>
+			
+			</div>
+			
+		</div>
+	
+       
+    </div>
+</div>
+
+
+
+<script>
+$('.flip').hover(function(){
+        $(this).find('.card').toggleClass('flipped');
+
+ });
+</script>
+
+</body>
+</html>
