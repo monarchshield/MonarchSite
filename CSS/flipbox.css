@@ -1,6 +1,6 @@
 .conteneurFlip {
-    width: 230px;
-    height: 230px;
+    max-width: 350px;
+    max-height: 350px;
    
     z-index: 2;
     left: 50%;
