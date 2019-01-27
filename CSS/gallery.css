@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-	max-width: 100rem;
+	max-width: 50rem;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
 }
@@ -64,8 +64,8 @@ body {
 
 .gallery-image {
 	display: block;
-	width: 250px;
-	height: 250px;
+	width: 50%;
+	height: 50%;
 	object-fit: cover;
 	transition: transform 400ms ease-out;
 }

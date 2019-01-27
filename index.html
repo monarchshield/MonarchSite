@@ -9,6 +9,7 @@
     <meta name="keywords"  content="TODO:" />
     <meta name="Resource-type" content="Document" />
 
+	
 	<link rel="stylesheet" type="text/css" href="CSS/texteffects/normalize.css" />
     <link rel="stylesheet" type="text/css" href="CSS/texteffects/curlytext.css" />
     <link rel="stylesheet" type="text/css" href="CSS/texteffects/style12.css" />
@@ -19,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="CSS/Particlecss.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	
+	<link rel="stylesheet" type="text/css" href="CSS/modalimages.css" />
 	
 	
     <!--[if IE]>
@@ -46,7 +47,7 @@
 		
 	</style>
 
-	
+	<script type="text/javascript" src="scripts/scrolloverflow.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/fullpage.js"></script>
 
@@ -67,6 +68,11 @@
                 sectionsColor: ['#ffffff', '#ffffff', '#ffffff' , '#ffffff', '#ffffff'],
                 navigation: true,
                 slidesNavigation: true,
+				controlArrows: false,
+				scrollOverflow: true,
+				verticalCentered: true,
+				css3: false,
+				setAllowScrolling: false,
 				licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
             });
 
@@ -83,6 +89,14 @@
 			
 			
         });
+		
+		$(function() {
+		$('.pop').on('click', function() {
+        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+        $('#imagemodal').modal('show');   
+    });     
+});
+		
     </script>
 
    
@@ -217,26 +231,363 @@
 	
 	<!-- Graphic Design Slide -->
 	<div class="slide">
-		<div class="intro"> <h1> <u> Graphic Design </u> </h1> </div>
-			
-			<div class="container">
-					<div class="row">
-						<div class="col-md-2">  </div>
-						
-						<div class="col-md-8">
-							  <div class="intro"> Follow me online, more information will be available soon </div>
-						</div>
-						
-						<div class="col-md-2">  </div>
+		<div class="intro"> <h1> <u> Logo design Design </u> </h1> </div>
+
+		<div class="container">
+		
+		
+			<div class="row">
 				
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/AgendaLogo2.png" alt="LGBTQA+ Agenda Logo Corporate" style="width:100%;max-width:300px"> </img>
+						
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+					<!--Test -->
 				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/AgendaLogo.png" alt="LGBTQA+ Agenda Logo Community" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/PandalogoDay3.png" alt="Panda Conservation Logo" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+			
 			</div>
+			
+			<div class="row">
+				
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/ButterflyRetro.jpg" alt="Butterfly Double Exposure Logo" style="width:100%;max-width:300px"> </img>
+						
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+					<!--Test -->
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/Music1HourLogo2.png" alt="Vector Radio Logo" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/Music1HourLogo4.png" alt="Vector Radio Logo" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+			
+			</div>
+			
+			<div class="row">
+				
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/CricketClub.png" alt="Cricket Club Mock Logo" style="width:100%;max-width:300px"> </img>
+						
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+					<!--Test -->
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/AirTrackLogo.png" alt="Airplane Travel Logo" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/1hourMensFashionLogofaceless.png" alt="Mens Fashion Logo" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+			
+			</div>
+			
+			<div class="row">
+				
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+					<img class="myImg" src="images/Logos/MountainBiancoLogo1.png" alt="Ski Mountain Logo 1" style="width:100%;max-width:300px">
+
+						
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+					<!--Test -->
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+					<img class="myImg" src="images/Logos/FlintAndFlame.png" alt="Fire Emblem" style="width:100%;max-width:300px"> </img>
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/MountainBiancoLogo2.png" alt="Ski Mountain Logo 2" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+			
+			</div>
+			
+						<div class="row">
+				
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/HotAirBalloonLogo3.png" alt="Hot Air Balloon Logo" style="width:100%;max-width:300px"> </img>
+						
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+					<!--Test -->
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/ButterflyGrafiti.jpg" alt="Butterfly Grafitti Logo" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/MadeWithLasersRetro.png" alt="Retro Made with Lasers Logo" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+			
+			</div>
+			
+			
+			<div class="row">
+				
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/PosterDesignJane.jpg" alt="Low Poly Character Art: Jane Lane (Daria)" style="width:100%;max-width:300px"> </img>
+						
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+					<!--Test -->
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/PosterDesign Daria.jpg" alt="Low Poly Character Art: Trent Lane (Daria)" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+				<div class="col-md-4">
+					<!-- Trigger the Modal -->
+						<img class="myImg" src="images/Logos/PosterDesignQuinn.jpg" alt="Low Poly Character Art: Quinn (Daria)" style="width:100%;max-width:300px">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="close">&times;</span>
+
+						  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img01">
+
+						  <!-- Modal Caption (Image Text) -->
+						  <div id="caption"></div>
+						</div>
+				</div>
+			
+			</div>
+
+		</div>
 	</div>
+	
 	<!-- Graphic Design Slide End -->
 	
 	<!-- Graphic Design Slide -->
 	<div class="slide">
-		<div class="intro"> <h1> <u> Game Developement </u> </h1> </div>
+		<div class="intro"> <h1> <u> Websites </u> </h1> </div>
 			
 			<div class="container">
 					<div class="row">
@@ -376,6 +727,8 @@ $('.flip').hover(function(){
 
  });
 </script>
+<script type="text/javascript" src="scripts/modalimage.js"></script>
+
 
 </body>
 </html>
