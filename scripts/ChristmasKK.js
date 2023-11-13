@@ -139,8 +139,10 @@ class PersonManager
 		let response = "";
 		for (let i = 0; i < this.people.length; i++) {
 			response += `ID ${this.people[i].getIndex()}: ${this.people[i].getGiftRecipient().getIndex()} -> `;
-			setTimeout(this.sendEmail(this.people[i].getPersonEmail(), this.people[i].getName() ,`The person you are to give a gift to is ${this.people[i].getGiftRecipient().getName()}`), 5000);
+			setTimeout(this.sendEmail(this.people[i].getPersonEmail(), this.people[i].getName() ,`The person you are to give a gift to is ${this.people[i].getGiftRecipient().getName()}`), 2000);
 		}
+		
+		
 		console.log(response);
 	}
 
