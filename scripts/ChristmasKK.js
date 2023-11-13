@@ -80,6 +80,8 @@ class PersonManager
 		
     }
 	
+
+	
 	GenerateFauxPeople() {
         for (let i = 0; i < this.participantsCount; i++) {
             this.people.push(new Person(i.toString(), "", i));
@@ -110,6 +112,7 @@ class PersonManager
     }
 	
 	
+	
 	HamiltonPath() 
 	{
 		const shuffledIndices = Array.from({ length: this.participantsCount }, (_, i) => i);
@@ -136,7 +139,7 @@ class PersonManager
 		let response = "";
 		for (let i = 0; i < this.people.length; i++) {
 			response += `ID ${this.people[i].getIndex()}: ${this.people[i].getGiftRecipient().getIndex()} -> `;
-			this.sendEmail(this.people[i].getPersonEmail(), this.people[i].getName() ,`The person you are to give a gift to is ${this.people[i].getGiftRecipient().getName()}`);
+			setTimeout(this.sendEmail(this.people[i].getPersonEmail(), this.people[i].getName() ,`The person you are to give a gift to is ${this.people[i].getGiftRecipient().getName()}`), 1000);
 		}
 		console.log(response);
 	}
@@ -237,9 +240,5 @@ $(document).ready(function() {
         });
 		
 		
-	$('#testmail').click(function() 
-	{
-		console.log("Attempting message send");
-		Manager.sendEmail("anthonybogli1@gmail.com", Anthony , "Testing that this sends my message");
-	});
+
 });
